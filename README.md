@@ -41,11 +41,20 @@ pip install -r requirements.txt
 **Execute scripts in this exact order:**
 
 ```bash
-python etl/dataset1_wait_times_etl.py
-python etl/dataset2_total_expenditure_etl.py
-python etl/dataset3_physicians_etl.py
-python etl/dataset4_geogrpahy_population_etl.py
-python etl/master_dataset_etl.py
+# Navigate to ETL directory
+cd etl
+
+# Run individual dataset processing
+python dataset1_wait_times_etl.py
+python dataset2_total_expenditure_etl.py
+python dataset3_physicians_etl.py
+python dataset4_geogrpahy_population_etl.py
+
+# Verify processed datasets exist
+ls ../data/processed/
+
+# Run master dataset integration
+python master_dataset_etl.py
 ```
 
 **Success Check**: Verify `data/final/healthcare_efficiency_master.csv` exists
