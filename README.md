@@ -48,7 +48,7 @@ cd etl
 python dataset1_wait_times_etl.py
 python dataset2_total_expenditure_etl.py
 python dataset3_physicians_etl.py
-python dataset4_geogrpahy_population_etl.py
+python dataset4_geography_population_etl.py
 
 # Verify processed datasets exist
 ls ../data/processed/
