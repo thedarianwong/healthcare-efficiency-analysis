@@ -97,7 +97,6 @@ healthcare-efficiency-canada/
 │   └── final/         # Master analysis dataset
 ├── etl/               # Data processing scripts
 ├── jupyter/           # Analysis notebooks
-├── results/           # Visualizations and outputs
 └── requirements.txt   # Dependencies
 ```
 
