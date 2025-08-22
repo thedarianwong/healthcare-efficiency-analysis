@@ -2,11 +2,11 @@
 
 > **Advanced data science analysis revealing provincial healthcare efficiency patterns and optimization strategies across Canada**
 
-<img width="1920" height="1080" alt="Canadian Healthcare Efficiency Banner" src="https://github.com/user-attachments/assets/54139199-5038-4325-9f9d-df16f8db34b9" />
-
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org)
 [![Data Science](https://img.shields.io/badge/Domain-Healthcare%20Analytics-green.svg)](https://github.com/dtw11/healthcare-efficiency-canada)
+
+<img width="1920" height="1080" alt="Canadian Healthcare Efficiency Banner" src="https://github.com/user-attachments/assets/54139199-5038-4325-9f9d-df16f8db34b9" />
 
 ## 🎯 Project Overview
 
@@ -48,13 +48,25 @@ pip install -r requirements.txt
 
 ### Run Analysis Pipeline
 ```bash
-# 1. Data Processing (ETL)
-cd etl && python master_dataset_etl.py
+# Navigate to ETL directory
+cd etl
 
-# 2. Launch Analysis
+# Run individual dataset processing
+python dataset1_wait_times_etl.py
+python dataset2_total_expenditure_etl.py
+python dataset3_physicians_etl.py
+python dataset4_geograpghy_population_etl.py
+
+# Verify processed datasets exist
+ls ../data/processed/
+
+# Run master dataset integration
+python master_dataset_etl.py
+
+# Start Jupyter
 jupyter notebook
 
-# 3. Execute notebooks in sequence:
+# Execute notebooks in sequence:
 #    → jupyter/01_primary_research_question.ipynb
 #    → jupyter/02_secondary_research_question.ipynb
 #    → jupyter/03_tertiary_research_question.ipynb
