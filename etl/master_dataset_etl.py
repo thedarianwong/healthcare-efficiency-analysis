@@ -37,6 +37,9 @@ def create_master_dataset(processed_data_dir="../data/processed", output_dir="..
     master_df['admin_overhead_pct'] = (master_df['administration'] / master_df['total_spending_per_capita']) * 100
     master_df['clinical_focus_pct'] = ((master_df['hospitals'] + master_df['physicians']) / master_df['total_spending_per_capita']) * 100
 
+    # COVID period flag
+    master_df['covid_period'] = master_df['year'].isin([2020, 2021])
+
     # Summary
     print(f"Master dataset created: {len(master_df)} records")
     print(f"Provinces: {master_df['province'].nunique()}")
