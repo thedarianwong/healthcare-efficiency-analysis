@@ -167,23 +167,38 @@ def clean_demographics_data(input_files: list, output_dir: str):
         if col in analysis_table.columns and analysis_table[col].dtype in ['float64', 'int64']:
             analysis_table[col] = analysis_table[col].round(2)
     
-    # Create time series (2008-2024) using 2021 census data
-    time_series_records = []
-    
-    for year in range(2008, 2025):
-        for _, province_row in analysis_table.iterrows():
-            time_record = province_row.copy()
-            time_record['year'] = year
-            time_series_records.append(time_record)
-    
-    time_series_df = pd.DataFrame(time_series_records)
-    
+    # Load real annual population from dataset5
+    pop_file = Path(output_dir) / 'population_annual_for_analysis.csv'
+    if not pop_file.exists():
+        raise FileNotFoundError(
+            f"Dataset4: {pop_file} not found. Run dataset5_population_etl.py first."
+        )
+    pop_df = pd.read_csv(pop_file)
+    print(f"Dataset4: Loaded {len(pop_df)} population records from dataset5")
+
+    # Keep only static census fields per province (no year dimension yet)
+    static_cols = [
+        'province', 'land_area_km2', 'average_age', 'median_age',
+        'percent_65_plus', 'rural_percent_estimate', 'urban_percent_estimate'
+    ]
+    static_df = analysis_table[[c for c in static_cols if c in analysis_table.columns]].copy()
+
+    # Merge real annual population onto static province data
+    time_series_df = pop_df.merge(static_df, on='province', how='left')
+
+    # Recalculate density per year using real population
+    time_series_df['population_density_per_km2'] = (
+        time_series_df['population_estimate'] / time_series_df['land_area_km2']
+    ).round(2)
+
+    time_series_df = time_series_df.sort_values(['province', 'year']).reset_index(drop=True)
+
     Path(output_dir).mkdir(parents=True, exist_ok=True)
     output_file = Path(output_dir) / 'demographics_for_analysis.csv'
     time_series_df.to_csv(output_file, index=False)
-    
+
     print(f"Demographics data cleaned: {len(time_series_df)} records saved to {output_file}")
-    
+
     return time_series_df
 
 if __name__ == "__main__":
