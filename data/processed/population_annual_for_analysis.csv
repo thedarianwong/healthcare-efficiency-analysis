@@ -1,0 +1,171 @@
+province,year,population_estimate,population_growth_rate
+Alberta,2008,3595875,
+Alberta,2009,3679010,2.31
+Alberta,2010,3732104,1.44
+Alberta,2011,3787705,1.49
+Alberta,2012,3871947,2.22
+Alberta,2013,3978532,2.75
+Alberta,2014,4081271,2.58
+Alberta,2015,4150147,1.69
+Alberta,2016,4195427,1.09
+Alberta,2017,4237310,1.0
+Alberta,2018,4292556,1.3
+Alberta,2019,4355377,1.46
+Alberta,2020,4407495,1.2
+Alberta,2021,4431531,0.55
+Alberta,2022,4512731,1.83
+Alberta,2023,4688576,3.9
+Alberta,2024,4909030,4.7
+British Columbia,2008,4349338,
+British Columbia,2009,4410513,1.41
+British Columbia,2010,4465557,1.25
+British Columbia,2011,4503819,0.86
+British Columbia,2012,4570866,1.49
+British Columbia,2013,4634943,1.4
+British Columbia,2014,4712691,1.68
+British Columbia,2015,4765472,1.12
+British Columbia,2016,4861269,2.01
+British Columbia,2017,4934202,1.5
+British Columbia,2018,5020979,1.76
+British Columbia,2019,5111022,1.79
+British Columbia,2020,5176101,1.27
+British Columbia,2021,5226665,0.98
+British Columbia,2022,5358845,2.53
+British Columbia,2023,5515296,2.92
+British Columbia,2024,5671114,2.83
+Manitoba,2008,1197767,
+Manitoba,2009,1208555,0.9
+Manitoba,2010,1220782,1.01
+Manitoba,2011,1233353,1.03
+Manitoba,2012,1249094,1.28
+Manitoba,2013,1263393,1.14
+Manitoba,2014,1277425,1.11
+Manitoba,2015,1293598,1.27
+Manitoba,2016,1314140,1.59
+Manitoba,2017,1334734,1.57
+Manitoba,2018,1352687,1.35
+Manitoba,2019,1370033,1.28
+Manitoba,2020,1380132,0.74
+Manitoba,2021,1391924,0.85
+Manitoba,2022,1413498,1.55
+Manitoba,2023,1453202,2.81
+Manitoba,2024,1492144,2.68
+New Brunswick,2008,746875,
+New Brunswick,2009,749956,0.41
+New Brunswick,2010,753034,0.41
+New Brunswick,2011,755590,0.34
+New Brunswick,2012,758121,0.33
+New Brunswick,2013,758261,0.02
+New Brunswick,2014,758657,0.05
+New Brunswick,2015,759226,0.08
+New Brunswick,2016,763322,0.54
+New Brunswick,2017,766697,0.44
+New Brunswick,2018,770497,0.5
+New Brunswick,2019,777387,0.89
+New Brunswick,2020,783432,0.78
+New Brunswick,2021,790802,0.94
+New Brunswick,2022,808869,2.28
+New Brunswick,2023,831103,2.75
+New Brunswick,2024,858293,3.27
+Newfoundland and Labrador,2008,511569,
+Newfoundland and Labrador,2009,516741,1.01
+Newfoundland and Labrador,2010,522002,1.02
+Newfoundland and Labrador,2011,524955,0.57
+Newfoundland and Labrador,2012,526235,0.24
+Newfoundland and Labrador,2013,526960,0.14
+Newfoundland and Labrador,2014,527970,0.19
+Newfoundland and Labrador,2015,528348,0.07
+Newfoundland and Labrador,2016,529586,0.23
+Newfoundland and Labrador,2017,529742,0.03
+Newfoundland and Labrador,2018,528402,-0.25
+Newfoundland and Labrador,2019,527643,-0.14
+Newfoundland and Labrador,2020,526884,-0.14
+Newfoundland and Labrador,2021,527056,0.03
+Newfoundland and Labrador,2022,531257,0.8
+Newfoundland and Labrador,2023,538789,1.42
+Newfoundland and Labrador,2024,546869,1.5
+Nova Scotia,2008,935965,
+Nova Scotia,2009,938266,0.25
+Nova Scotia,2010,942144,0.41
+Nova Scotia,2011,944095,0.21
+Nova Scotia,2012,943163,-0.1
+Nova Scotia,2013,939808,-0.36
+Nova Scotia,2014,937768,-0.22
+Nova Scotia,2015,937419,-0.04
+Nova Scotia,2016,942984,0.59
+Nova Scotia,2017,952159,0.97
+Nova Scotia,2018,962072,1.04
+Nova Scotia,2019,975799,1.43
+Nova Scotia,2020,989168,1.37
+Nova Scotia,2021,999908,1.09
+Nova Scotia,2022,1024034,2.41
+Nova Scotia,2023,1053005,2.83
+Nova Scotia,2024,1082769,2.83
+Ontario,2008,12883824,
+Ontario,2009,12998941,0.89
+Ontario,2010,13136481,1.06
+Ontario,2011,13262345,0.96
+Ontario,2012,13392364,0.98
+Ontario,2013,13511902,0.89
+Ontario,2014,13617763,0.78
+Ontario,2015,13709293,0.67
+Ontario,2016,13876500,1.22
+Ontario,2017,14078499,1.46
+Ontario,2018,14326746,1.76
+Ontario,2019,14573565,1.72
+Ontario,2020,14761811,1.29
+Ontario,2021,14842488,0.55
+Ontario,2022,15155836,2.11
+Ontario,2023,15632481,3.14
+Ontario,2024,16144797,3.28
+Prince Edward Island,2008,138736,
+Prince Edward Island,2009,139873,0.82
+Prince Edward Island,2010,141644,1.27
+Prince Edward Island,2011,143918,1.61
+Prince Edward Island,2012,144415,0.35
+Prince Edward Island,2013,143942,-0.33
+Prince Edward Island,2014,144095,0.11
+Prince Edward Island,2015,144636,0.38
+Prince Edward Island,2016,146891,1.56
+Prince Edward Island,2017,149740,1.94
+Prince Edward Island,2018,152259,1.68
+Prince Edward Island,2019,155792,2.32
+Prince Edward Island,2020,159193,2.18
+Prince Edward Island,2021,162133,1.85
+Prince Edward Island,2022,167200,3.13
+Prince Edward Island,2023,173734,3.91
+Prince Edward Island,2024,179709,3.44
+Quebec,2008,7761614,
+Quebec,2009,7843915,1.06
+Quebec,2010,7929479,1.09
+Quebec,2011,8004736,0.95
+Quebec,2012,8059752,0.69
+Quebec,2013,8108825,0.61
+Quebec,2014,8147535,0.48
+Quebec,2015,8175743,0.35
+Quebec,2016,8225036,0.6
+Quebec,2017,8292832,0.82
+Quebec,2018,8386951,1.13
+Quebec,2019,8483186,1.15
+Quebec,2020,8551095,0.8
+Quebec,2021,8572020,0.24
+Quebec,2022,8669963,1.14
+Quebec,2023,8821696,1.75
+Quebec,2024,8995474,1.97
+Saskatchewan,2008,1017368,
+Saskatchewan,2009,1034791,1.71
+Saskatchewan,2010,1051426,1.61
+Saskatchewan,2011,1065661,1.35
+Saskatchewan,2012,1083005,1.63
+Saskatchewan,2013,1098868,1.46
+Saskatchewan,2014,1111989,1.19
+Saskatchewan,2015,1122210,0.92
+Saskatchewan,2016,1135496,1.18
+Saskatchewan,2017,1147315,1.04
+Saskatchewan,2018,1156210,0.78
+Saskatchewan,2019,1164223,0.69
+Saskatchewan,2020,1167386,0.27
+Saskatchewan,2021,1167711,0.03
+Saskatchewan,2022,1178796,0.95
+Saskatchewan,2023,1210257,2.67
+Saskatchewan,2024,1247868,3.11
