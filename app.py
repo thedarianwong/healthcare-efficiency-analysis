@@ -86,7 +86,7 @@ if page == "Overview":
             "Controls province heterogeneity (best model)",
         ],
     }
-    st.dataframe(pd.DataFrame(comparison_data), use_container_width=True, hide_index=True)
+    st.dataframe(pd.DataFrame(comparison_data), width='stretch', hide_index=True)
 
     st.subheader("Limitations")
     st.markdown(
@@ -157,7 +157,7 @@ elif page == "Provincial Explorer":
     national_avg = prov_avg["raw_efficiency"].mean()
     fig_rank.add_hline(y=national_avg, line_dash="dash", line_color="gray",
                        annotation_text=f"National Avg: {national_avg:.1f}")
-    st.plotly_chart(fig_rank, use_container_width=True)
+    st.plotly_chart(fig_rank, width='stretch')
 
     # --- Province detail ---
     st.subheader(f"{selected_province} Detail")
@@ -182,7 +182,7 @@ elif page == "Provincial Explorer":
         # Highlight COVID period
         fig_wait.add_vrect(x0=2020, x1=2021, fillcolor="red", opacity=0.1,
                            annotation_text="COVID", annotation_position="top left")
-        st.plotly_chart(fig_wait, use_container_width=True)
+        st.plotly_chart(fig_wait, width='stretch')
 
         # Spending breakdown
         spending_long = prov_data.melt(
@@ -195,7 +195,7 @@ elif page == "Provincial Explorer":
             spending_long, x="year", y="Spending ($)", color="Category",
             title=f"{selected_province} — Spending Breakdown",
         )
-        st.plotly_chart(fig_spend, use_container_width=True)
+        st.plotly_chart(fig_spend, width='stretch')
 
 # ===========================================================================
 # PAGE 3: Policy Simulator
