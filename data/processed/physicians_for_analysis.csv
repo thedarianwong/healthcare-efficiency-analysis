@@ -1,171 +1,171 @@
-province,year,physicians_per_10k_population
-Alberta,2008,21.0
-Alberta,2009,21.0
-Alberta,2010,21.0
-Alberta,2011,21.0
-Alberta,2012,21.0
-Alberta,2013,21.0
-Alberta,2014,21.0
-Alberta,2015,21.0
-Alberta,2016,21.0
-Alberta,2017,21.0
-Alberta,2018,21.0
-Alberta,2019,21.0
-Alberta,2020,21.0
-Alberta,2021,21.0
-Alberta,2022,21.0
-Alberta,2023,21.0
-Alberta,2024,21.0
-British Columbia,2008,22.5
-British Columbia,2009,22.5
-British Columbia,2010,22.5
-British Columbia,2011,22.5
-British Columbia,2012,22.5
-British Columbia,2013,22.5
-British Columbia,2014,22.5
-British Columbia,2015,22.5
-British Columbia,2016,22.5
-British Columbia,2017,22.5
-British Columbia,2018,22.9
-British Columbia,2019,23.4
-British Columbia,2020,23.8
-British Columbia,2021,24.2
-British Columbia,2022,24.2
-British Columbia,2023,24.2
-British Columbia,2024,24.2
-Manitoba,2008,14.8
-Manitoba,2009,14.8
-Manitoba,2010,14.8
-Manitoba,2011,14.8
-Manitoba,2012,14.8
-Manitoba,2013,14.8
-Manitoba,2014,14.8
-Manitoba,2015,14.8
-Manitoba,2016,14.8
-Manitoba,2017,14.8
-Manitoba,2018,15.0
-Manitoba,2019,15.1
-Manitoba,2020,15.2
-Manitoba,2021,15.4
-Manitoba,2022,15.4
-Manitoba,2023,15.4
-Manitoba,2024,15.4
-New Brunswick,2008,23.6
-New Brunswick,2009,23.6
-New Brunswick,2010,23.6
-New Brunswick,2011,23.6
-New Brunswick,2012,23.6
-New Brunswick,2013,23.6
-New Brunswick,2014,23.6
-New Brunswick,2015,23.6
-New Brunswick,2016,23.6
-New Brunswick,2017,23.6
-New Brunswick,2018,24.1
-New Brunswick,2019,24.6
-New Brunswick,2020,25.2
-New Brunswick,2021,25.7
-New Brunswick,2022,25.7
-New Brunswick,2023,25.7
-New Brunswick,2024,25.7
-Newfoundland and Labrador,2008,19.0
-Newfoundland and Labrador,2009,19.0
-Newfoundland and Labrador,2010,19.0
-Newfoundland and Labrador,2011,19.0
-Newfoundland and Labrador,2012,19.0
-Newfoundland and Labrador,2013,19.0
-Newfoundland and Labrador,2014,19.0
-Newfoundland and Labrador,2015,19.0
-Newfoundland and Labrador,2016,19.0
-Newfoundland and Labrador,2017,19.0
-Newfoundland and Labrador,2018,19.0
-Newfoundland and Labrador,2019,19.0
-Newfoundland and Labrador,2020,19.0
-Newfoundland and Labrador,2021,19.0
-Newfoundland and Labrador,2022,19.0
-Newfoundland and Labrador,2023,19.0
-Newfoundland and Labrador,2024,19.0
-Nova Scotia,2008,22.5
-Nova Scotia,2009,22.5
-Nova Scotia,2010,22.5
-Nova Scotia,2011,22.5
-Nova Scotia,2012,22.5
-Nova Scotia,2013,22.5
-Nova Scotia,2014,22.5
-Nova Scotia,2015,22.5
-Nova Scotia,2016,22.5
-Nova Scotia,2017,22.5
-Nova Scotia,2018,22.9
-Nova Scotia,2019,23.2
-Nova Scotia,2020,23.6
-Nova Scotia,2021,24.0
-Nova Scotia,2022,24.0
-Nova Scotia,2023,24.0
-Nova Scotia,2024,24.0
-Ontario,2008,22.4
-Ontario,2009,22.4
-Ontario,2010,22.4
-Ontario,2011,22.4
-Ontario,2012,22.4
-Ontario,2013,22.4
-Ontario,2014,22.4
-Ontario,2015,22.4
-Ontario,2016,22.4
-Ontario,2017,22.4
-Ontario,2018,22.6
-Ontario,2019,22.8
-Ontario,2020,22.9
-Ontario,2021,23.1
-Ontario,2022,23.1
-Ontario,2023,23.1
-Ontario,2024,23.1
-Prince Edward Island,2008,19.0
-Prince Edward Island,2009,19.0
-Prince Edward Island,2010,19.0
-Prince Edward Island,2011,19.0
-Prince Edward Island,2012,19.0
-Prince Edward Island,2013,19.0
-Prince Edward Island,2014,19.0
-Prince Edward Island,2015,19.0
-Prince Edward Island,2016,19.0
-Prince Edward Island,2017,19.0
-Prince Edward Island,2018,19.5
-Prince Edward Island,2019,20.0
-Prince Edward Island,2020,20.5
-Prince Edward Island,2021,21.0
-Prince Edward Island,2022,21.0
-Prince Edward Island,2023,21.0
-Prince Edward Island,2024,21.0
-Quebec,2008,25.1
-Quebec,2009,25.1
-Quebec,2010,25.1
-Quebec,2011,25.1
-Quebec,2012,25.1
-Quebec,2013,25.1
-Quebec,2014,25.1
-Quebec,2015,25.1
-Quebec,2016,25.1
-Quebec,2017,25.1
-Quebec,2018,25.4
-Quebec,2019,25.8
-Quebec,2020,26.1
-Quebec,2021,26.4
-Quebec,2022,26.4
-Quebec,2023,26.4
-Quebec,2024,26.4
-Saskatchewan,2008,15.2
-Saskatchewan,2009,15.2
-Saskatchewan,2010,15.2
-Saskatchewan,2011,15.2
-Saskatchewan,2012,15.2
-Saskatchewan,2013,15.2
-Saskatchewan,2014,15.2
-Saskatchewan,2015,15.2
-Saskatchewan,2016,15.2
-Saskatchewan,2017,15.2
-Saskatchewan,2018,14.8
-Saskatchewan,2019,14.3
-Saskatchewan,2020,13.9
-Saskatchewan,2021,13.5
-Saskatchewan,2022,13.5
-Saskatchewan,2023,13.5
-Saskatchewan,2024,13.5
+province,year,physicians_per_10k_population,physician_data_source
+Alberta,2008,21.0,estimated
+Alberta,2009,21.0,estimated
+Alberta,2010,21.0,estimated
+Alberta,2011,21.0,estimated
+Alberta,2012,21.0,estimated
+Alberta,2013,21.0,estimated
+Alberta,2014,21.0,estimated
+Alberta,2015,21.0,estimated
+Alberta,2016,21.0,estimated
+Alberta,2017,21.0,actual
+Alberta,2018,21.0,interpolated
+Alberta,2019,21.0,interpolated
+Alberta,2020,21.0,interpolated
+Alberta,2021,21.0,actual
+Alberta,2022,21.0,estimated
+Alberta,2023,21.0,estimated
+Alberta,2024,21.0,estimated
+British Columbia,2008,19.1,estimated
+British Columbia,2009,19.4,estimated
+British Columbia,2010,19.8,estimated
+British Columbia,2011,20.2,estimated
+British Columbia,2012,20.5,estimated
+British Columbia,2013,20.9,estimated
+British Columbia,2014,21.3,estimated
+British Columbia,2015,21.7,estimated
+British Columbia,2016,22.1,estimated
+British Columbia,2017,22.5,actual
+British Columbia,2018,22.9,interpolated
+British Columbia,2019,23.4,interpolated
+British Columbia,2020,23.8,interpolated
+British Columbia,2021,24.2,actual
+British Columbia,2022,24.6,estimated
+British Columbia,2023,25.1,estimated
+British Columbia,2024,25.6,estimated
+Manitoba,2008,13.5,estimated
+Manitoba,2009,13.7,estimated
+Manitoba,2010,13.8,estimated
+Manitoba,2011,13.9,estimated
+Manitoba,2012,14.1,estimated
+Manitoba,2013,14.2,estimated
+Manitoba,2014,14.4,estimated
+Manitoba,2015,14.5,estimated
+Manitoba,2016,14.7,estimated
+Manitoba,2017,14.8,actual
+Manitoba,2018,15.0,interpolated
+Manitoba,2019,15.1,interpolated
+Manitoba,2020,15.2,interpolated
+Manitoba,2021,15.4,actual
+Manitoba,2022,15.6,estimated
+Manitoba,2023,15.7,estimated
+Manitoba,2024,15.9,estimated
+New Brunswick,2008,19.5,estimated
+New Brunswick,2009,19.9,estimated
+New Brunswick,2010,20.3,estimated
+New Brunswick,2011,20.8,estimated
+New Brunswick,2012,21.2,estimated
+New Brunswick,2013,21.7,estimated
+New Brunswick,2014,22.1,estimated
+New Brunswick,2015,22.6,estimated
+New Brunswick,2016,23.1,estimated
+New Brunswick,2017,23.6,actual
+New Brunswick,2018,24.1,interpolated
+New Brunswick,2019,24.6,interpolated
+New Brunswick,2020,25.2,interpolated
+New Brunswick,2021,25.7,actual
+New Brunswick,2022,26.3,estimated
+New Brunswick,2023,26.8,estimated
+New Brunswick,2024,27.4,estimated
+Newfoundland and Labrador,2008,19.0,estimated
+Newfoundland and Labrador,2009,19.0,estimated
+Newfoundland and Labrador,2010,19.0,estimated
+Newfoundland and Labrador,2011,19.0,estimated
+Newfoundland and Labrador,2012,19.0,estimated
+Newfoundland and Labrador,2013,19.0,estimated
+Newfoundland and Labrador,2014,19.0,estimated
+Newfoundland and Labrador,2015,19.0,estimated
+Newfoundland and Labrador,2016,19.0,estimated
+Newfoundland and Labrador,2017,19.0,actual
+Newfoundland and Labrador,2018,19.0,interpolated
+Newfoundland and Labrador,2019,19.0,interpolated
+Newfoundland and Labrador,2020,19.0,interpolated
+Newfoundland and Labrador,2021,19.0,actual
+Newfoundland and Labrador,2022,19.0,estimated
+Newfoundland and Labrador,2023,19.0,estimated
+Newfoundland and Labrador,2024,19.0,estimated
+Nova Scotia,2008,19.5,estimated
+Nova Scotia,2009,19.8,estimated
+Nova Scotia,2010,20.1,estimated
+Nova Scotia,2011,20.4,estimated
+Nova Scotia,2012,20.8,estimated
+Nova Scotia,2013,21.1,estimated
+Nova Scotia,2014,21.4,estimated
+Nova Scotia,2015,21.8,estimated
+Nova Scotia,2016,22.1,estimated
+Nova Scotia,2017,22.5,actual
+Nova Scotia,2018,22.9,interpolated
+Nova Scotia,2019,23.2,interpolated
+Nova Scotia,2020,23.6,interpolated
+Nova Scotia,2021,24.0,actual
+Nova Scotia,2022,24.4,estimated
+Nova Scotia,2023,24.8,estimated
+Nova Scotia,2024,25.2,estimated
+Ontario,2008,20.9,estimated
+Ontario,2009,21.1,estimated
+Ontario,2010,21.2,estimated
+Ontario,2011,21.4,estimated
+Ontario,2012,21.6,estimated
+Ontario,2013,21.7,estimated
+Ontario,2014,21.9,estimated
+Ontario,2015,22.1,estimated
+Ontario,2016,22.2,estimated
+Ontario,2017,22.4,actual
+Ontario,2018,22.6,interpolated
+Ontario,2019,22.8,interpolated
+Ontario,2020,22.9,interpolated
+Ontario,2021,23.1,actual
+Ontario,2022,23.3,estimated
+Ontario,2023,23.5,estimated
+Ontario,2024,23.6,estimated
+Prince Edward Island,2008,15.2,estimated
+Prince Edward Island,2009,15.6,estimated
+Prince Edward Island,2010,15.9,estimated
+Prince Edward Island,2011,16.4,estimated
+Prince Edward Island,2012,16.8,estimated
+Prince Edward Island,2013,17.2,estimated
+Prince Edward Island,2014,17.6,estimated
+Prince Edward Island,2015,18.1,estimated
+Prince Edward Island,2016,18.5,estimated
+Prince Edward Island,2017,19.0,actual
+Prince Edward Island,2018,19.5,interpolated
+Prince Edward Island,2019,20.0,interpolated
+Prince Edward Island,2020,20.5,interpolated
+Prince Edward Island,2021,21.0,actual
+Prince Edward Island,2022,21.5,estimated
+Prince Edward Island,2023,22.1,estimated
+Prince Edward Island,2024,22.6,estimated
+Quebec,2008,22.4,estimated
+Quebec,2009,22.7,estimated
+Quebec,2010,23.0,estimated
+Quebec,2011,23.3,estimated
+Quebec,2012,23.6,estimated
+Quebec,2013,23.9,estimated
+Quebec,2014,24.2,estimated
+Quebec,2015,24.5,estimated
+Quebec,2016,24.8,estimated
+Quebec,2017,25.1,actual
+Quebec,2018,25.4,interpolated
+Quebec,2019,25.8,interpolated
+Quebec,2020,26.1,interpolated
+Quebec,2021,26.4,actual
+Quebec,2022,26.7,estimated
+Quebec,2023,27.1,estimated
+Quebec,2024,27.4,estimated
+Saskatchewan,2008,19.8,estimated
+Saskatchewan,2009,19.3,estimated
+Saskatchewan,2010,18.7,estimated
+Saskatchewan,2011,18.2,estimated
+Saskatchewan,2012,17.6,estimated
+Saskatchewan,2013,17.1,estimated
+Saskatchewan,2014,16.6,estimated
+Saskatchewan,2015,16.1,estimated
+Saskatchewan,2016,15.7,estimated
+Saskatchewan,2017,15.2,actual
+Saskatchewan,2018,14.8,interpolated
+Saskatchewan,2019,14.3,interpolated
+Saskatchewan,2020,13.9,interpolated
+Saskatchewan,2021,13.5,actual
+Saskatchewan,2022,13.1,estimated
+Saskatchewan,2023,12.7,estimated
+Saskatchewan,2024,12.4,estimated

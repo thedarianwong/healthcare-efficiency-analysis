@@ -29,28 +29,43 @@ def extract_province_from_region(region_name):
     
     return None
 
-# Interpolate physician density for missing years between 2017 and 2021
+# Extrapolate and interpolate physician density across 2008-2024
 def interpolate_missing_years(physicians_2017, physicians_2021, target_years):
+    # CAGR between the two actual data points (annual growth rate)
+    if physicians_2017 > 0 and physicians_2021 > 0:
+        cagr = (physicians_2021 / physicians_2017) ** (1 / 4) - 1
+    else:
+        cagr = 0.0
+
     interpolated_data = []
-    
+
     for year in target_years:
-        if year <= 2017:
-            # I will use 2017 date for ealier years
-            physician_density = physicians_2017
-        elif year >= 2021:
-            # I will use 2021 data for later years  
-            physician_density = physicians_2021
-        else:
-            # Then, we do linear interpolation between 2017 and 2021
+        if year == 2017:
+            density = physicians_2017
+            source = 'actual'
+        elif year == 2021:
+            density = physicians_2021
+            source = 'actual'
+        elif 2017 < year < 2021:
+            # Linear interpolation between the two data points
             progress = (year - 2017) / (2021 - 2017)
-            physician_density = physicians_2017 + (physicians_2021 - physicians_2017) * progress
-            physician_density = round(physician_density, 1)
-        
+            density = physicians_2017 + (physicians_2021 - physicians_2017) * progress
+            source = 'interpolated'
+        elif year < 2017:
+            # CAGR extrapolation backward
+            density = physicians_2017 * (1 + cagr) ** (year - 2017)
+            source = 'estimated'
+        else:
+            # CAGR extrapolation forward (year > 2021)
+            density = physicians_2021 * (1 + cagr) ** (year - 2021)
+            source = 'estimated'
+
         interpolated_data.append({
             'year': year,
-            'physicians_per_10k': physician_density
+            'physicians_per_10k': round(density, 1),
+            'physician_data_source': source
         })
-    
+
     return interpolated_data
 
 # Clean physician resources data and create analysis table
@@ -109,7 +124,8 @@ def clean_physician_data(input_file: str, output_dir: str):
             all_records.append({
                 'province': province_name,
                 'year': year_data['year'],
-                'physicians_per_10k_population': year_data['physicians_per_10k']
+                'physicians_per_10k_population': year_data['physicians_per_10k'],
+                'physician_data_source': year_data['physician_data_source']
             })
     
     analysis_table = pd.DataFrame(all_records)
