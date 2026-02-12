@@ -1,114 +1,118 @@
-# 🏥 Canadian Healthcare Efficiency Analysis
+# Canadian Healthcare Efficiency Analysis
 
-> **Advanced data science analysis revealing provincial healthcare efficiency patterns and optimization strategies across Canada**
+Analyzing healthcare efficiency across **10 Canadian provinces** over **17 years** (2008-2024). Combines ETL data processing, statistical analysis, and machine learning to identify what drives provincial wait time differences and how spending reallocation could improve outcomes.
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org)
-[![Data Science](https://img.shields.io/badge/Domain-Healthcare%20Analytics-green.svg)](https://github.com/dtw11/healthcare-efficiency-canada)
+**Live Dashboard**: [healthcare-efficiency-canada.streamlit.app](https://healthcare-efficiency-canada.streamlit.app)
 
-<img width="1920" height="1080" alt="Canadian Healthcare Efficiency Banner" src="https://github.com/user-attachments/assets/54139199-5038-4325-9f9d-df16f8db34b9" />
+## Research Questions
 
-## 🎯 Project Overview
+1. **Efficiency Ranking** — Which provinces achieve the best wait times relative to their spending?
+2. **Spending Impact** — How do different spending categories (hospitals, physicians, drugs, admin) affect wait times?
+3. **Optimization** — What budget-neutral reallocations could reduce wait times?
 
-This comprehensive data science project analyzes healthcare efficiency across 10 Canadian provinces over 17 years (2008-2024), combining machine learning, statistical analysis, and optimization modeling to identify actionable insights for healthcare policy improvement.
+## Key Findings
 
-**Key Achievement**: Developed linear regression model achieving statistical significance (p<0.001) and identified key spending relationships that could optimize provincial healthcare efficiency.
+- **Ontario** consistently ranks highest in efficiency; **PEI** ranks lowest
+- K-means clustering (k=3) identifies 1 High, 5 Medium, 4 Low efficiency tiers
+- OLS regression fails to generalize across provinces (GroupKFold R² = -16.5)
+- **Fixed Effects OLS** controls for province heterogeneity, achieving R² = 0.345
+- Only **physicians** (p=0.0001) and **drugs** (p=0.002) spending remain significant with province effects controlled
+- Spending explains ~35% of wait time variance — staffing, scheduling, and patient complexity matter too
 
-## 📊 Data & Methodology
+## Data Sources
 
-- **Scale**: 169 records × 41 features spanning demographics, spending, resources, and outcomes
-- **Sources**: Canadian Institute for Health Information (CIHI), Statistics Canada
-- **Techniques**: Statistical hypothesis testing, linear regression, correlation analysis, ANOVA testing
-- **Geographic Controls**: Population density, rural/urban distribution, land area adjustments
+| Source | Description | Records |
+|--------|-------------|---------|
+| CIHI Wait Times | 50th percentile wait by procedure, province, year | 169 province-years |
+| CIHI Spending | 14 spending categories per capita | 169 province-years |
+| CIHI Physicians | Physicians per 10k (2017, 2021 snapshots) | 20 data points, extrapolated |
+| StatsCan Census | Demographics, land area, urbanization | 10 provinces (static) |
+| StatsCan 17-10-0009 | Quarterly population estimates | 170 province-years |
 
-## 🔬 Research Questions
+## Project Structure
 
-1. **Efficiency Ranking**: Which provinces achieve optimal wait times relative to resource investment?
-2. **Resource Strategy**: How do spending patterns (hospitals vs physicians vs administration) impact performance?
-3. **Optimization**: What reallocation strategies could minimize national wait times?
-
-## 🚀 Quick Start
-
-### Prerequisites
-```bash
-Python 3.8+ | Git | Jupyter Notebook
+```
+healthcare-efficiency-analysis/
+├── app.py                          # Streamlit dashboard (3 pages)
+├── .streamlit/config.toml          # Dashboard theme
+├── etl/
+│   ├── dataset1_wait_times_etl.py        # Volume-weighted wait time aggregation
+│   ├── dataset2_total_expenditure_etl.py # 14-category spending breakdown
+│   ├── dataset3_physicians_etl.py        # CAGR-extrapolated physician density
+│   ├── dataset4_geograpghy_population_etl.py  # Demographics + annual population
+│   ├── dataset5_population_etl.py        # StatsCan annual population estimates
+│   └── master_dataset_etl.py             # Merge all → 44-column master dataset
+├── jupyter/
+│   ├── 01_v2_provincial_efficiency.ipynb # K-means tier classification
+│   ├── 02_secondary_research_question.ipynb # Spending impact analysis
+│   └── 03_v2_resource_optimization.ipynb # Regression diagnostics + model comparison
+├── models/                         # Trained model artifacts (.joblib)
+├── data/
+│   ├── raw/                        # Source CSVs
+│   ├── processed/                  # Cleaned per-dataset CSVs
+│   └── final/                      # Master analysis dataset
+└── requirements.txt
 ```
 
-### Installation & Setup
+## Quick Start
+
 ```bash
 # Clone and setup
-git clone https://github.com/your-username/healthcare-efficiency-canada.git
-cd healthcare-efficiency-canada
-
-# Environment setup
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+git clone <repo-url>
+cd healthcare-efficiency-analysis
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-```
 
-### Run Analysis Pipeline
-```bash
-# Navigate to ETL directory
+# Run ETL pipeline (from etl/ directory)
 cd etl
-
-# Run individual dataset processing
 python dataset1_wait_times_etl.py
 python dataset2_total_expenditure_etl.py
 python dataset3_physicians_etl.py
 python dataset4_geograpghy_population_etl.py
-
-# Verify processed datasets exist
-ls ../data/processed/
-
-# Run master dataset integration
+python dataset5_population_etl.py
 python master_dataset_etl.py
+cd ..
 
-# Start Jupyter
+# Run Streamlit dashboard
+streamlit run app.py
+
+# Or run Jupyter notebooks
 jupyter notebook
-
-# Execute notebooks in sequence:
-#    → jupyter/01_primary_research_question.ipynb
-#    → jupyter/02_secondary_research_question.ipynb
-#    → jupyter/03_tertiary_research_question.ipynb
+# Execute: 01_v2 → 02 → 03_v2
 ```
 
-## 📈 Key Findings
+## Model Comparison
 
-- **Top Performers**: Ontario and Newfoundland & Labrador lead with 189.6 average efficiency score and 44.6-day wait times
-- **Efficiency Gap**: 91-point efficiency range between highest (Ontario: 189.8) and lowest (PEI: 98.8) performers
-- **Administrative Impact**: Each $100 increase in administrative spending correlates with 14.2-day longer wait times (p<0.001)
-- **Physician Investment**: Most cost-effective lever with 11.4-day wait time reduction per $100 investment
-- **Overhead Insight**: High-efficiency provinces maintain 0.6% lower administrative overhead (2.6% vs 3.2%)
+| Model | Test R² | 5-Fold CV R² | GroupKFold R² | Notes |
+|-------|---------|-------------|---------------|-------|
+| OLS (baseline) | 0.108 | 0.138 | -16.5 | Fails cross-province generalization |
+| Ridge | 0.111 | 0.008 | -19.2 | Stabilizes coefficients |
+| Lasso | 0.110 | 0.009 | -19.3 | No features zeroed out |
+| **Fixed Effects OLS** | **0.345** | **0.346** | N/A | **Best model** — controls province heterogeneity |
 
-## 🛠️ Technical Stack
+## ETL Improvements (vs. Original)
 
-- **Data Processing**: Pandas, NumPy, Scikit-learn
-- **Visualization**: Matplotlib
-- **ML Models**: Linear Regression for interpretable coefficients
-- **Statistical Analysis**: SciPy, Statsmodels, ANOVA, T-tests, Correlation Analysis
+| Issue | Before | After |
+|-------|--------|-------|
+| Population data | Static 2021 census for all years | Real annual estimates from StatsCan |
+| Wait time aggregation | Simple mean across procedures | Volume-weighted average |
+| Volume parsing | Bug: `"7,700"` silently dropped | Fixed comma parsing |
+| Physician extrapolation | Flat (frozen at 2017/2021) | CAGR growth model |
+| Tier classification | Arbitrary hardcoded thresholds | K-means clustering with silhouette validation |
+| Regression validation | Single 70/30 split, no diagnostics | VIF, residual plots, GroupKFold, assumption tests |
 
-## 📁 Project Structure
+## Limitations
 
-```
-healthcare-efficiency-canada/
-├── data/
-│   ├── raw/           # Original datasets
-│   ├── processed/     # Cleaned individual datasets
-│   └── final/         # Master analysis dataset
-├── etl/               # Data processing scripts
-├── jupyter/           # Analysis notebooks
-└── requirements.txt   # Dependencies
-```
+- Age demographics (average_age, percent_65_plus) are static 2021 census values
+- Physician density is extrapolated from only 2 data points (2017 and 2021)
+- Wait time procedure coverage varies by province (8-12 procedures)
+- R² = 0.35 means spending explains ~35% of wait time variance
 
-## 📊 Data Visualizations
+## Tech Stack
 
-The project includes dashboards and comprehensive visualizations showing:
-- Provincial efficiency rankings bar chart with tier color-coding
-- Resource allocation patterns across efficiency tiers and administrative overhead correlation with
-provincial efficiency scores
-- Machine learning model predictions of wait time impacts from $100 spending changes and policy
-scenario outcomes for resource reallocation strategies
-
----
-
-⭐ **Star this repo if you find it useful for healthcare analytics or data science portfolio examples!**
+- **ETL**: Python, Pandas, NumPy
+- **Analysis**: Scikit-learn, Statsmodels, SciPy
+- **Visualization**: Plotly, Matplotlib, Seaborn
+- **Dashboard**: Streamlit
+- **Data**: CIHI, Statistics Canada
