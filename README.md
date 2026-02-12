@@ -4,6 +4,8 @@ Analyzing healthcare efficiency across **10 Canadian provinces** over **17 years
 
 **Live Dashboard**: [healthcare-efficiency-canada.streamlit.app](https://healthcare-efficiency-canada.streamlit.app)
 
+<img width="708" height="417" alt="image" src="https://github.com/user-attachments/assets/ac9e7b23-c0e8-4b34-b902-95a4c412ed0d" />
+
 ## Research Questions
 
 1. **Efficiency Ranking** — Which provinces achieve the best wait times relative to their spending?
