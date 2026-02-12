@@ -1,170 +1,170 @@
-province,year,avg_wait_time,procedures_with_wait_times,benchmark_pct
-Alberta,2008,59.0,6,79.8
-Alberta,2009,57.1,7,76.7
-Alberta,2010,60.0,7,76.9
-Alberta,2011,56.9,7,79.6
-Alberta,2012,55.6,7,80.5
-Alberta,2013,47.6,12,79.5
-Alberta,2014,41.2,12,82.2
-Alberta,2015,46.2,12,81.5
-Alberta,2016,48.2,12,82.2
-Alberta,2017,54.8,12,79.3
-Alberta,2018,52.8,12,78.2
-Alberta,2019,55.3,12,74.3
-Alberta,2020,65.2,12,67.2
-Alberta,2021,52.6,12,75.0
-Alberta,2022,70.9,12,66.3
-Alberta,2023,56.2,12,71.5
-Alberta,2024,52.8,12,77.2
-British Columbia,2008,55.6,5,82.6
-British Columbia,2009,53.8,4,83.2
-British Columbia,2010,52.2,5,86.5
-British Columbia,2011,56.6,5,83.8
-British Columbia,2012,54.8,5,82.8
-British Columbia,2013,37.1,10,82.2
-British Columbia,2014,46.7,10,75.6
-British Columbia,2015,53.3,10,71.2
-British Columbia,2016,53.9,10,70.2
-British Columbia,2017,55.1,10,69.6
-British Columbia,2018,46.1,12,73.6
-British Columbia,2019,40.9,12,76.4
-British Columbia,2020,54.2,12,66.2
-British Columbia,2021,39.1,12,76.4
-British Columbia,2022,48.1,12,72.2
-British Columbia,2023,48.0,12,69.8
-British Columbia,2024,49.9,12,71.8
-Manitoba,2008,82.0,5,77.6
-Manitoba,2009,77.0,5,79.5
-Manitoba,2010,83.0,5,77.5
-Manitoba,2011,70.0,7,77.3
-Manitoba,2012,74.6,7,69.8
-Manitoba,2013,57.1,9,75.4
-Manitoba,2014,50.3,9,79.2
-Manitoba,2015,62.4,9,73.2
-Manitoba,2016,71.3,9,69.8
-Manitoba,2017,76.4,9,64.2
-Manitoba,2018,80.2,9,61.4
-Manitoba,2019,76.1,9,65.4
-Manitoba,2020,90.6,9,59.2
-Manitoba,2021,78.2,9,64.2
-Manitoba,2022,97.1,9,60.0
-Manitoba,2023,75.2,9,70.8
-Manitoba,2024,82.8,9,66.2
-New Brunswick,2008,91.8,4,76.8
-New Brunswick,2009,70.5,4,82.5
-New Brunswick,2010,63.5,4,83.3
-New Brunswick,2011,83.5,4,81.2
-New Brunswick,2012,60.0,5,78.4
-New Brunswick,2013,36.0,10,79.6
-New Brunswick,2014,48.6,10,75.8
-New Brunswick,2015,49.7,10,76.4
-New Brunswick,2016,56.4,10,72.0
-New Brunswick,2017,58.2,10,72.4
-New Brunswick,2018,58.9,10,70.0
-New Brunswick,2019,61.3,10,68.0
-New Brunswick,2020,81.7,10,58.6
-New Brunswick,2021,58.3,10,69.0
-New Brunswick,2022,72.7,10,61.6
-New Brunswick,2023,69.2,10,64.6
-New Brunswick,2024,62.2,10,66.6
-Newfoundland and Labrador,2009,8.5,2,93.0
-Newfoundland and Labrador,2010,56.8,5,82.3
-Newfoundland and Labrador,2011,64.8,5,84.1
-Newfoundland and Labrador,2012,52.0,5,85.5
-Newfoundland and Labrador,2013,32.7,9,90.7
-Newfoundland and Labrador,2014,36.9,9,90.2
-Newfoundland and Labrador,2015,37.0,9,92.2
-Newfoundland and Labrador,2016,43.3,9,87.3
-Newfoundland and Labrador,2017,41.1,10,86.0
-Newfoundland and Labrador,2018,44.8,10,88.2
-Newfoundland and Labrador,2019,48.1,10,82.3
-Newfoundland and Labrador,2020,89.5,10,63.2
-Newfoundland and Labrador,2021,65.4,10,71.8
-Newfoundland and Labrador,2022,73.2,10,66.3
-Newfoundland and Labrador,2023,77.8,10,61.5
-Newfoundland and Labrador,2024,83.8,8,66.3
-Nova Scotia,2008,123.5,4,66.5
-Nova Scotia,2009,84.3,7,68.5
-Nova Scotia,2010,76.1,7,71.5
-Nova Scotia,2011,90.7,7,67.5
-Nova Scotia,2012,99.0,7,60.6
-Nova Scotia,2013,65.5,12,64.0
-Nova Scotia,2014,64.2,12,63.4
-Nova Scotia,2015,66.8,12,66.2
-Nova Scotia,2016,63.5,12,67.4
-Nova Scotia,2017,66.8,12,66.0
-Nova Scotia,2018,58.7,12,70.2
-Nova Scotia,2019,59.8,12,69.8
-Nova Scotia,2020,72.0,12,59.0
-Nova Scotia,2021,58.3,12,69.2
-Nova Scotia,2022,75.7,12,61.4
-Nova Scotia,2023,69.8,12,65.4
-Nova Scotia,2024,63.0,12,76.0
-Ontario,2008,35.3,7,90.6
-Ontario,2009,33.6,7,88.1
-Ontario,2010,34.4,7,87.4
-Ontario,2011,35.3,7,86.9
-Ontario,2012,34.0,7,85.5
-Ontario,2013,29.5,12,85.3
-Ontario,2014,29.7,12,85.8
-Ontario,2015,32.2,12,85.2
-Ontario,2016,33.2,12,83.2
-Ontario,2017,33.8,12,82.2
-Ontario,2018,33.0,12,83.0
-Ontario,2019,33.2,12,83.2
-Ontario,2020,50.8,12,69.8
-Ontario,2021,39.2,12,77.5
-Ontario,2022,42.2,12,74.8
-Ontario,2023,38.6,12,79.2
-Ontario,2024,36.6,12,81.0
-Prince Edward Island,2008,67.3,6,76.5
-Prince Edward Island,2009,72.7,6,82.0
-Prince Edward Island,2010,59.3,6,82.8
-Prince Edward Island,2011,70.3,6,73.8
-Prince Edward Island,2012,89.3,6,64.4
-Prince Edward Island,2013,57.9,10,73.5
-Prince Edward Island,2014,51.1,10,71.2
-Prince Edward Island,2015,48.4,9,83.2
-Prince Edward Island,2016,56.1,9,79.7
-Prince Edward Island,2017,74.8,9,70.0
-Prince Edward Island,2018,75.1,9,65.5
-Prince Edward Island,2019,78.0,9,68.2
-Prince Edward Island,2020,89.7,9,66.0
-Prince Edward Island,2021,73.4,9,70.2
-Prince Edward Island,2022,70.4,9,67.7
-Prince Edward Island,2023,100.8,9,53.0
-Prince Edward Island,2024,112.1,9,60.0
-Quebec,2008,65.3,3,86.0
-Quebec,2009,62.7,3,87.3
-Quebec,2010,68.0,3,89.0
-Quebec,2011,73.0,3,86.8
-Quebec,2012,73.7,3,85.2
-Quebec,2013,42.4,8,86.2
-Quebec,2014,41.8,8,88.0
-Quebec,2015,42.0,8,87.8
-Quebec,2016,44.9,8,87.2
-Quebec,2017,44.5,8,86.2
-Quebec,2018,48.2,8,84.2
-Quebec,2019,49.9,8,82.0
-Quebec,2020,73.9,8,63.0
-Quebec,2021,72.4,8,65.8
-Quebec,2022,85.6,8,60.8
-Quebec,2023,79.6,8,64.5
-Quebec,2024,84.0,8,61.5
-Saskatchewan,2008,107.8,5,64.0
-Saskatchewan,2009,86.6,5,73.3
-Saskatchewan,2010,55.6,7,76.8
-Saskatchewan,2011,56.9,7,79.7
-Saskatchewan,2012,77.8,5,71.6
-Saskatchewan,2013,37.3,12,78.6
-Saskatchewan,2014,28.4,10,89.2
-Saskatchewan,2015,27.3,12,94.4
-Saskatchewan,2016,36.9,12,81.6
-Saskatchewan,2017,40.3,12,78.6
-Saskatchewan,2018,44.2,12,72.0
-Saskatchewan,2019,60.6,12,65.4
-Saskatchewan,2020,70.0,12,58.2
-Saskatchewan,2021,76.8,12,63.4
-Saskatchewan,2022,90.0,12,59.8
-Saskatchewan,2023,70.0,12,64.4
-Saskatchewan,2024,55.0,12,68.8
+province,year,avg_wait_time,procedures_with_wait_times,total_volume,procedures_with_volume,low_procedure_coverage,benchmark_pct
+Alberta,2008,55.9,6.0,49296.0,2.0,False,79.8
+Alberta,2009,59.9,7.0,58722.0,6.0,False,76.7
+Alberta,2010,53.6,7.0,49869.0,6.0,False,76.9
+Alberta,2011,34.8,7.0,146513.0,7.0,False,79.6
+Alberta,2012,48.1,7.0,91493.0,7.0,False,80.5
+Alberta,2013,47.5,12.0,142976.0,12.0,False,79.5
+Alberta,2014,38.7,12.0,152327.0,12.0,False,82.2
+Alberta,2015,53.8,12.0,152755.0,12.0,False,81.5
+Alberta,2016,54.6,12.0,165176.0,12.0,False,82.2
+Alberta,2017,62.0,12.0,159899.0,12.0,False,79.3
+Alberta,2018,50.3,12.0,153446.0,12.0,False,78.2
+Alberta,2019,53.1,12.0,159481.0,12.0,False,74.3
+Alberta,2020,39.8,12.0,147323.0,12.0,False,67.2
+Alberta,2021,30.3,12.0,179339.0,12.0,False,75.0
+Alberta,2022,39.8,12.0,160185.0,12.0,False,66.3
+Alberta,2023,42.6,12.0,178375.0,12.0,False,71.5
+Alberta,2024,52.1,12.0,197968.0,12.0,False,77.2
+British Columbia,2008,54.8,5.0,27357.0,3.0,False,82.6
+British Columbia,2009,50.2,4.0,28511.0,3.0,True,83.2
+British Columbia,2010,55.5,5.0,30469.0,4.0,False,86.5
+British Columbia,2011,52.8,5.0,37670.0,5.0,False,83.8
+British Columbia,2012,45.1,5.0,36461.0,5.0,False,82.8
+British Columbia,2013,42.0,10.0,42778.0,10.0,False,82.2
+British Columbia,2014,58.5,10.0,44143.0,10.0,False,75.6
+British Columbia,2015,69.0,10.0,46509.0,10.0,False,71.2
+British Columbia,2016,72.2,10.0,48263.0,10.0,False,70.2
+British Columbia,2017,75.2,10.0,49495.0,10.0,False,69.6
+British Columbia,2018,38.2,12.0,268413.0,12.0,False,73.6
+British Columbia,2019,34.6,12.0,287363.0,12.0,False,76.4
+British Columbia,2020,47.3,12.0,222460.0,12.0,False,66.2
+British Columbia,2021,33.0,12.0,308639.0,12.0,False,76.4
+British Columbia,2022,37.8,12.0,299625.0,12.0,False,72.2
+British Columbia,2023,46.3,12.0,316139.0,12.0,False,69.8
+British Columbia,2024,50.2,12.0,326838.0,12.0,False,71.8
+Manitoba,2008,76.9,5.0,7848.0,5.0,False,77.6
+Manitoba,2009,76.2,5.0,7587.0,5.0,False,79.5
+Manitoba,2010,82.8,5.0,7681.0,5.0,False,77.5
+Manitoba,2011,42.5,7.0,49742.0,7.0,False,77.3
+Manitoba,2012,37.1,7.0,57241.0,7.0,False,69.8
+Manitoba,2013,45.0,9.0,66107.0,9.0,False,75.4
+Manitoba,2014,47.0,9.0,69727.0,9.0,False,79.2
+Manitoba,2015,61.9,9.0,50525.0,9.0,False,73.2
+Manitoba,2016,60.7,9.0,73287.0,9.0,False,69.8
+Manitoba,2017,49.4,9.0,87552.0,9.0,False,64.2
+Manitoba,2018,42.3,9.0,98534.0,9.0,False,61.4
+Manitoba,2019,43.7,9.0,100378.0,9.0,False,65.4
+Manitoba,2020,54.1,9.0,77816.0,9.0,False,59.2
+Manitoba,2021,47.9,9.0,103367.0,9.0,False,64.2
+Manitoba,2022,49.5,9.0,86965.0,9.0,False,60.0
+Manitoba,2023,71.6,9.0,55743.0,9.0,False,70.8
+Manitoba,2024,84.7,9.0,46235.0,9.0,False,66.2
+New Brunswick,2008,70.2,4.0,5512.0,4.0,True,76.8
+New Brunswick,2009,55.4,4.0,5742.0,4.0,True,82.5
+New Brunswick,2010,51.7,4.0,5801.0,4.0,True,83.3
+New Brunswick,2011,53.8,4.0,6371.0,4.0,True,81.2
+New Brunswick,2012,42.8,5.0,7194.0,5.0,False,78.4
+New Brunswick,2013,33.9,10.0,8597.0,10.0,False,79.6
+New Brunswick,2014,51.4,10.0,8609.0,10.0,False,75.8
+New Brunswick,2015,55.2,10.0,8715.0,10.0,False,76.4
+New Brunswick,2016,70.0,10.0,8899.0,10.0,False,72.0
+New Brunswick,2017,65.9,10.0,9300.0,10.0,False,72.4
+New Brunswick,2018,69.1,10.0,9419.0,10.0,False,70.0
+New Brunswick,2019,77.0,10.0,9592.0,10.0,False,68.0
+New Brunswick,2020,102.0,10.0,7736.0,10.0,False,58.6
+New Brunswick,2021,64.0,10.0,10025.0,10.0,False,69.0
+New Brunswick,2022,80.2,10.0,9393.0,10.0,False,61.6
+New Brunswick,2023,71.8,10.0,10472.0,10.0,False,64.6
+New Brunswick,2024,70.8,10.0,12116.0,10.0,False,66.6
+Newfoundland and Labrador,2009,8.8,2.0,996.0,2.0,True,93.0
+Newfoundland and Labrador,2010,57.6,5.0,3318.0,5.0,False,82.3
+Newfoundland and Labrador,2011,69.1,5.0,2730.0,5.0,False,84.1
+Newfoundland and Labrador,2012,53.4,5.0,3683.0,5.0,False,85.5
+Newfoundland and Labrador,2013,38.1,9.0,2978.0,9.0,False,90.7
+Newfoundland and Labrador,2014,41.5,9.0,3291.0,9.0,False,90.2
+Newfoundland and Labrador,2015,41.7,9.0,3706.0,9.0,False,92.2
+Newfoundland and Labrador,2016,59.1,9.0,4070.0,9.0,False,87.3
+Newfoundland and Labrador,2017,59.1,10.0,3730.0,10.0,False,86.0
+Newfoundland and Labrador,2018,62.1,10.0,3995.0,10.0,False,88.2
+Newfoundland and Labrador,2019,72.7,10.0,3426.0,10.0,False,82.3
+Newfoundland and Labrador,2020,125.5,10.0,2044.0,10.0,False,63.2
+Newfoundland and Labrador,2021,98.5,10.0,2984.0,10.0,False,71.8
+Newfoundland and Labrador,2022,107.5,10.0,3119.0,10.0,False,66.3
+Newfoundland and Labrador,2023,116.6,10.0,3323.0,10.0,False,61.5
+Newfoundland and Labrador,2024,117.6,8.0,2928.0,8.0,False,66.3
+Nova Scotia,2008,83.3,4.0,5923.0,4.0,True,66.5
+Nova Scotia,2009,35.4,7.0,36795.0,7.0,False,68.5
+Nova Scotia,2010,36.2,7.0,52702.0,7.0,False,71.5
+Nova Scotia,2011,39.0,7.0,44039.0,7.0,False,67.5
+Nova Scotia,2012,34.7,7.0,73218.0,7.0,False,60.6
+Nova Scotia,2013,35.4,12.0,50476.0,12.0,False,64.0
+Nova Scotia,2014,38.8,12.0,51818.0,12.0,False,63.4
+Nova Scotia,2015,38.8,12.0,51950.0,12.0,False,66.2
+Nova Scotia,2016,42.3,12.0,54832.0,12.0,False,67.4
+Nova Scotia,2017,44.0,12.0,55557.0,12.0,False,66.0
+Nova Scotia,2018,41.8,12.0,61063.0,12.0,False,70.2
+Nova Scotia,2019,40.6,12.0,60152.0,12.0,False,69.8
+Nova Scotia,2020,38.7,12.0,37041.0,12.0,False,59.0
+Nova Scotia,2021,46.7,12.0,59004.0,12.0,False,69.2
+Nova Scotia,2022,53.7,12.0,59917.0,12.0,False,61.4
+Nova Scotia,2023,59.2,12.0,58964.0,12.0,False,65.4
+Nova Scotia,2024,54.6,12.0,68139.0,12.0,False,76.0
+Ontario,2008,20.5,7.0,653018.0,7.0,False,90.6
+Ontario,2009,23.8,7.0,680696.0,7.0,False,88.1
+Ontario,2010,22.6,7.0,674985.0,7.0,False,87.4
+Ontario,2011,22.1,7.0,703073.0,7.0,False,86.9
+Ontario,2012,20.2,7.0,706896.0,7.0,False,85.5
+Ontario,2013,18.7,12.0,777152.0,12.0,False,85.3
+Ontario,2014,20.8,12.0,796021.0,12.0,False,85.8
+Ontario,2015,24.8,12.0,793556.0,12.0,False,85.2
+Ontario,2016,22.6,12.0,921155.0,12.0,False,83.2
+Ontario,2017,22.9,12.0,963715.0,12.0,False,82.2
+Ontario,2018,22.7,12.0,993024.0,12.0,False,83.0
+Ontario,2019,22.5,12.0,997405.0,12.0,False,83.2
+Ontario,2020,20.0,12.0,721901.0,12.0,False,69.8
+Ontario,2021,20.5,12.0,980133.0,12.0,False,77.5
+Ontario,2022,25.4,12.0,1022073.0,12.0,False,74.8
+Ontario,2023,25.7,12.0,1134012.0,12.0,False,79.2
+Ontario,2024,27.5,12.0,1215088.0,12.0,False,81.0
+Prince Edward Island,2008,43.7,6.0,5402.0,6.0,False,76.5
+Prince Edward Island,2009,42.3,6.0,5850.0,6.0,False,82.0
+Prince Edward Island,2010,38.7,6.0,5991.0,6.0,False,82.8
+Prince Edward Island,2011,25.7,6.0,6009.0,6.0,False,73.8
+Prince Edward Island,2012,34.8,6.0,6039.0,6.0,False,64.4
+Prince Edward Island,2013,45.0,10.0,6416.0,10.0,False,73.5
+Prince Edward Island,2014,49.6,10.0,5890.0,10.0,False,71.2
+Prince Edward Island,2015,41.2,9.0,6430.0,9.0,False,83.2
+Prince Edward Island,2016,44.5,9.0,6655.0,9.0,False,79.7
+Prince Edward Island,2017,62.0,9.0,8221.0,9.0,False,70.0
+Prince Edward Island,2018,38.4,9.0,8350.0,9.0,False,65.5
+Prince Edward Island,2019,50.5,9.0,8135.0,9.0,False,68.2
+Prince Edward Island,2020,41.9,9.0,9455.0,9.0,False,66.0
+Prince Edward Island,2021,47.7,9.0,8634.0,9.0,False,70.2
+Prince Edward Island,2022,39.7,9.0,8497.0,9.0,False,67.7
+Prince Edward Island,2023,40.6,9.0,11913.0,9.0,False,53.0
+Prince Edward Island,2024,49.1,9.0,10470.0,9.0,False,60.0
+Quebec,2008,46.3,3.0,37725.0,3.0,True,86.0
+Quebec,2009,41.9,3.0,42923.0,3.0,True,87.3
+Quebec,2010,42.4,3.0,44293.0,3.0,True,89.0
+Quebec,2011,41.9,3.0,47337.0,3.0,True,86.8
+Quebec,2012,43.5,3.0,53248.0,3.0,True,85.2
+Quebec,2013,36.7,8.0,68432.0,8.0,False,86.2
+Quebec,2014,37.5,8.0,65986.0,8.0,False,88.0
+Quebec,2015,40.0,8.0,64575.0,8.0,False,87.8
+Quebec,2016,54.3,8.0,65796.0,8.0,False,87.2
+Quebec,2017,45.3,8.0,65361.0,8.0,False,86.2
+Quebec,2018,47.2,8.0,67259.0,8.0,False,84.2
+Quebec,2019,48.4,8.0,68095.0,8.0,False,82.0
+Quebec,2020,90.1,8.0,34621.0,8.0,False,63.0
+Quebec,2021,74.9,8.0,57161.0,8.0,False,65.8
+Quebec,2022,84.5,8.0,58740.0,8.0,False,60.8
+Quebec,2023,80.3,8.0,61247.0,8.0,False,64.5
+Quebec,2024,92.1,8.0,71673.0,8.0,False,61.5
+Saskatchewan,2008,119.3,5.0,5828.0,5.0,False,64.0
+Saskatchewan,2009,99.3,5.0,6066.0,5.0,False,73.3
+Saskatchewan,2010,47.2,7.0,14530.0,6.0,False,76.8
+Saskatchewan,2011,41.1,7.0,23990.0,7.0,False,79.7
+Saskatchewan,2012,91.6,5.0,5995.0,5.0,False,71.6
+Saskatchewan,2013,31.8,12.0,32421.0,12.0,False,78.6
+Saskatchewan,2014,39.1,10.0,8300.0,10.0,False,89.2
+Saskatchewan,2015,27.0,12.0,39081.0,12.0,False,94.4
+Saskatchewan,2016,33.3,12.0,42611.0,12.0,False,81.6
+Saskatchewan,2017,30.6,12.0,42683.0,12.0,False,78.6
+Saskatchewan,2018,34.2,12.0,44399.0,12.0,False,72.0
+Saskatchewan,2019,46.0,12.0,45408.0,12.0,False,65.4
+Saskatchewan,2020,40.4,12.0,33222.0,12.0,False,58.2
+Saskatchewan,2021,44.5,12.0,42185.0,12.0,False,63.4
+Saskatchewan,2022,60.7,12.0,47527.0,12.0,False,59.8
+Saskatchewan,2023,50.4,12.0,49247.0,12.0,False,64.4
+Saskatchewan,2024,42.6,12.0,52694.0,12.0,False,68.8
