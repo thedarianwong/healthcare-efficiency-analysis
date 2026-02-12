@@ -1,10 +1,14 @@
 # Canadian Healthcare Efficiency Analysis
+<p align="left">
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
+  <img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white" />
+</p>
+
+<img width="690" height="288" alt="image" src="https://github.com/user-attachments/assets/a4bcf2b7-8fc0-45fc-bbd2-f9191a55f79f" />
 
 Analyzing healthcare efficiency across **10 Canadian provinces** over **17 years** (2008-2024). Combines ETL data processing, statistical analysis, and machine learning to identify what drives provincial wait time differences and how spending reallocation could improve outcomes.
 
 **Live Dashboard**: [healthcare-efficiency-canada.streamlit.app](https://healthcare-efficiency-canada.streamlit.app)
-
-<img width="708" height="417" alt="image" src="https://github.com/user-attachments/assets/ac9e7b23-c0e8-4b34-b902-95a4c412ed0d" />
 
 ## Research Questions
 
